@@ -53,7 +53,7 @@ def sliders(func, sliders_properties, wait_for_validation=False):
 
     def on_changed(event):
         res = func(*(s.val for s in sliders))
-        if res is not None:
+        if res != None:
             print(res)
 
     def on_key_press(event):
